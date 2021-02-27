@@ -65,11 +65,11 @@ Here's an example configuration:
 ```yaml
 matrix_synapse_configuration_extension_yaml: |
   enable_group_creation: true
-  group_creation_prefix: "unofficial/"
+  group_creation_prefix: "unofficial_"
 
 matrix_mautrix_facebook_configuration_extension_yaml: |
   bridge:
-    community_template: "unofficial/facebook_{localpart}={server}"
+    community_template: "unofficial_facebook_{localpart}={server}"
 ```
 
 Once the bridge is restarted, it would create a community and invite you to it. You need to accept the community invitation manually.
